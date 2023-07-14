@@ -54,18 +54,18 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'sqlite3' if RUBY_PLATFORM != 'java'
 
-  if RUBY_VERSION >= '2.5'
+  # if RUBY_VERSION >= '2.5'
     s.add_dependency 'activesupport', '>= 6.0.3.1', '< 6.2'
-  else
-    s.add_dependency 'activesupport', '>= 5.2.4.3', '< 6.0'
-  end
+  # else
+  #   s.add_dependency 'activesupport', '>= 5.2.4.3', '< 6.0'
+  # end
 
   s.add_dependency 'aws-sdk-s3', '~> 1.16'
-  if RUBY_VERSION >= '2.5'
+  # if RUBY_VERSION >= '2.5'
     s.add_dependency 'docile', '~> 1.1'
-  else
-    s.add_dependency 'docile', '> 1.1', '< 1.4.0'
-  end
+  # else
+  #   s.add_dependency 'docile', '> 1.1', '< 1.4.0'
+  # end
   s.add_dependency 'azure-storage-blob', '~> 1.1.0'
   s.add_dependency 'nokogiri', '~> 1.10.0'
   s.add_dependency 'gli', '~> 2.15'
